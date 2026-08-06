@@ -1,0 +1,19 @@
+/* src/styles/index.css */
+
+/* ==========================================================================
+   Angelisyn Website
+   Styles Entry Point
+   ========================================================================== */
+
+/*
+ * Import order is important:
+ * 1. Design tokens
+ * 2. Typography
+ * 3. Animations
+ * 4. Utility classes
+ */
+
+@import "./variables.css";
+@import "./typography.css";
+@import "./animations.css";
+@import "./utilities.css";

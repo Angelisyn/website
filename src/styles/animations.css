@@ -1,0 +1,245 @@
+/* src/styles/animations.css */
+
+/* ==========================================================================
+   Angelisyn Website
+   Animation System
+   ========================================================================== */
+
+:root {
+    --animation-duration-fast: 150ms;
+    --animation-duration-normal: 200ms;
+    --animation-duration-slow: 300ms;
+    --animation-duration-slower: 500ms;
+
+    --animation-easing-standard: cubic-bezier(0.4, 0, 0.2, 1);
+    --animation-easing-emphasized: cubic-bezier(0.2, 0, 0, 1);
+}
+
+/* ==========================================================================
+   Keyframes
+   ========================================================================== */
+
+@keyframes fade-in {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fade-out {
+    from {
+        opacity: 1;
+    }
+
+    to {
+        opacity: 0;
+    }
+}
+
+@keyframes slide-up {
+    from {
+        opacity: 0;
+        transform: translateY(1rem);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slide-down {
+    from {
+        opacity: 0;
+        transform: translateY(-1rem);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slide-left {
+    from {
+        opacity: 0;
+        transform: translateX(1rem);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes slide-right {
+    from {
+        opacity: 0;
+        transform: translateX(-1rem);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes scale-in {
+    from {
+        opacity: 0;
+        transform: scale(0.96);
+    }
+
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+@keyframes scale-out {
+    from {
+        opacity: 1;
+        transform: scale(1);
+    }
+
+    to {
+        opacity: 0;
+        transform: scale(0.96);
+    }
+}
+
+@keyframes pulse-soft {
+
+    0%,
+    100% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0.65;
+    }
+}
+
+@keyframes shimmer {
+    from {
+        background-position: -200% 0;
+    }
+
+    to {
+        background-position: 200% 0;
+    }
+}
+
+@keyframes spin {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+/* ==========================================================================
+   Utility Animation Classes
+   ========================================================================== */
+
+.animate-fade-in {
+    animation:
+        fade-in var(--animation-duration-normal) var(--animation-easing-standard) both;
+}
+
+.animate-fade-out {
+    animation:
+        fade-out var(--animation-duration-normal) var(--animation-easing-standard) both;
+}
+
+.animate-slide-up {
+    animation:
+        slide-up var(--animation-duration-normal) var(--animation-easing-standard) both;
+}
+
+.animate-slide-down {
+    animation:
+        slide-down var(--animation-duration-normal) var(--animation-easing-standard) both;
+}
+
+.animate-slide-left {
+    animation:
+        slide-left var(--animation-duration-normal) var(--animation-easing-standard) both;
+}
+
+.animate-slide-right {
+    animation:
+        slide-right var(--animation-duration-normal) var(--animation-easing-standard) both;
+}
+
+.animate-scale-in {
+    animation:
+        scale-in var(--animation-duration-fast) var(--animation-easing-standard) both;
+}
+
+.animate-scale-out {
+    animation:
+        scale-out var(--animation-duration-fast) var(--animation-easing-standard) both;
+}
+
+.animate-pulse-soft {
+    animation:
+        pulse-soft 2s ease-in-out infinite;
+}
+
+.animate-spin-slow {
+    animation:
+        spin 1.5s linear infinite;
+}
+
+.animate-shimmer {
+    background: linear-gradient(90deg,
+            transparent,
+            rgb(255 255 255 / 8%),
+            transparent);
+    background-size: 200% 100%;
+    animation:
+        shimmer 2s linear infinite;
+}
+
+/* ==========================================================================
+   Transition Utilities
+   ========================================================================== */
+
+.transition-default {
+    transition:
+        color var(--animation-duration-normal) var(--animation-easing-standard),
+        background-color var(--animation-duration-normal) var(--animation-easing-standard),
+        border-color var(--animation-duration-normal) var(--animation-easing-standard),
+        opacity var(--animation-duration-normal) var(--animation-easing-standard),
+        transform var(--animation-duration-normal) var(--animation-easing-standard),
+        box-shadow var(--animation-duration-normal) var(--animation-easing-standard);
+}
+
+.transition-transform {
+    transition:
+        transform var(--animation-duration-normal) var(--animation-easing-standard);
+}
+
+.transition-opacity {
+    transition:
+        opacity var(--animation-duration-normal) var(--animation-easing-standard);
+}
+
+/* ==========================================================================
+   Accessibility
+   ========================================================================== */
+
+@media (prefers-reduced-motion: reduce) {
+
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-delay: 0ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+    }
+}

@@ -1,0 +1,280 @@
+/* src/styles/utilities.css */
+
+/* ==========================================================================
+   Angelisyn Website
+   Utility Classes
+   ========================================================================== */
+
+/* --------------------------------------------------------------------------
+   Layout
+   -------------------------------------------------------------------------- */
+
+.container-fluid {
+    width: 100%;
+    margin-inline: auto;
+    padding-inline: var(--space-4);
+}
+
+.container-content {
+    width: min(100%, var(--content-width));
+    margin-inline: auto;
+}
+
+.container-page {
+    width: min(100%, var(--container-width));
+    margin-inline: auto;
+}
+
+/* --------------------------------------------------------------------------
+   Section Spacing
+   -------------------------------------------------------------------------- */
+
+.section {
+    padding-block: var(--space-20);
+}
+
+.section-sm {
+    padding-block: var(--space-12);
+}
+
+.section-lg {
+    padding-block: var(--space-24);
+}
+
+/* --------------------------------------------------------------------------
+   Surface
+   -------------------------------------------------------------------------- */
+
+.surface {
+    background: var(--surface);
+}
+
+.surface-muted {
+    background: var(--surface-muted);
+}
+
+.surface-elevated {
+    background: var(--surface-elevated);
+}
+
+/* --------------------------------------------------------------------------
+   Border Radius
+   -------------------------------------------------------------------------- */
+
+.rounded-xs {
+    border-radius: var(--radius-xs);
+}
+
+.rounded-sm {
+    border-radius: var(--radius-sm);
+}
+
+.rounded-md {
+    border-radius: var(--radius-md);
+}
+
+.rounded-lg {
+    border-radius: var(--radius-lg);
+}
+
+.rounded-xl {
+    border-radius: var(--radius-xl);
+}
+
+.rounded-2xl {
+    border-radius: var(--radius-2xl);
+}
+
+.rounded-full {
+    border-radius: var(--radius-full);
+}
+
+/* --------------------------------------------------------------------------
+   Shadows
+   -------------------------------------------------------------------------- */
+
+.shadow-xs {
+    box-shadow: var(--shadow-xs);
+}
+
+.shadow-sm {
+    box-shadow: var(--shadow-sm);
+}
+
+.shadow-md {
+    box-shadow: var(--shadow-md);
+}
+
+.shadow-lg {
+    box-shadow: var(--shadow-lg);
+}
+
+.shadow-xl {
+    box-shadow: var(--shadow-xl);
+}
+
+/* --------------------------------------------------------------------------
+   Text
+   -------------------------------------------------------------------------- */
+
+.text-balance {
+    text-wrap: balance;
+}
+
+.text-pretty {
+    text-wrap: pretty;
+}
+
+.text-muted {
+    color: var(--color-slate-500);
+}
+
+.text-primary {
+    color: var(--color-primary);
+}
+
+.text-success {
+    color: var(--color-success);
+}
+
+.text-warning {
+    color: var(--color-warning);
+}
+
+.text-destructive {
+    color: var(--color-destructive);
+}
+
+/* --------------------------------------------------------------------------
+   Backgrounds
+   -------------------------------------------------------------------------- */
+
+.bg-primary {
+    background-color: var(--color-primary);
+    color: var(--color-primary-foreground);
+}
+
+.bg-secondary {
+    background-color: var(--color-secondary);
+    color: var(--color-secondary-foreground);
+}
+
+.bg-accent {
+    background-color: var(--color-accent);
+    color: var(--color-accent-foreground);
+}
+
+/* --------------------------------------------------------------------------
+   Glass
+   -------------------------------------------------------------------------- */
+
+.glass {
+    backdrop-filter: blur(var(--blur-md));
+    -webkit-backdrop-filter: blur(var(--blur-md));
+    background: rgb(255 255 255 / 0.08);
+    border: 1px solid rgb(255 255 255 / 0.08);
+}
+
+.dark .glass {
+    background: rgb(15 23 42 / 0.6);
+    border-color: rgb(255 255 255 / 0.04);
+}
+
+/* --------------------------------------------------------------------------
+   Focus
+   -------------------------------------------------------------------------- */
+
+.focus-ring:focus-visible {
+    outline: 2px solid var(--ring);
+    outline-offset: 2px;
+}
+
+/* --------------------------------------------------------------------------
+   Visibility
+   -------------------------------------------------------------------------- */
+
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    overflow: hidden;
+    white-space: nowrap;
+    clip: rect(0, 0, 0, 0);
+    border: 0;
+}
+
+.not-sr-only {
+    position: static;
+    width: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    white-space: normal;
+    clip: auto;
+}
+
+/* --------------------------------------------------------------------------
+   Scrollbar
+   -------------------------------------------------------------------------- */
+
+.scrollbar-hidden {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+.scrollbar-hidden::-webkit-scrollbar {
+    display: none;
+}
+
+.scrollbar-thin {
+    scrollbar-width: thin;
+}
+
+.scrollbar-thin::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+}
+
+.scrollbar-thin::-webkit-scrollbar-thumb {
+    border-radius: var(--radius-full);
+    background: var(--color-slate-500);
+}
+
+.scrollbar-thin::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+/* --------------------------------------------------------------------------
+   Overflow
+   -------------------------------------------------------------------------- */
+
+.overflow-overlay {
+    overflow: auto;
+    overscroll-behavior: contain;
+}
+
+/* --------------------------------------------------------------------------
+   Interaction
+   -------------------------------------------------------------------------- */
+
+.clickable {
+    cursor: pointer;
+    user-select: none;
+}
+
+.disabled {
+    pointer-events: none;
+    opacity: 0.5;
+}
+
+/* --------------------------------------------------------------------------
+   Print
+   -------------------------------------------------------------------------- */
+
+@media print {
+    .no-print {
+        display: none !important;
+    }
+}

@@ -9,7 +9,7 @@ import {
     DEFAULT_THEME,
     THEME_STORAGE_KEY,
     type ThemeMode,
-} from "@/constants/themes";
+} from "../constants/themes";
 
 export interface UseThemeReturn {
     readonly theme: ThemeMode;

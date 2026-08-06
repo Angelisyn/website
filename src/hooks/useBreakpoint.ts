@@ -4,7 +4,7 @@
 
 import { useEffect, useMemo, useState } from "react";
 
-import { BREAKPOINTS } from "@/constants";
+import { BREAKPOINTS } from "../constants";
 
 export interface BreakpointState {
     readonly width: number;

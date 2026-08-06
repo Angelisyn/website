@@ -1,19 +1,31 @@
 export interface SEOConfig {
-    title: string
+    title: string;
 
-    titleTemplate: string
+    titleTemplate: string;
 
-    description: string
+    description: string;
 
-    keywords: string[]
+    keywords: string[];
 
-    author: string
+    author: string;
 
-    creator: string
+    creator: string;
+
+    publisher: string;
 
     robots: {
-        index: boolean
+        index: boolean;
+        follow: boolean;
+    };
 
-        follow: boolean
-    }
+    openGraph: {
+        type: string;
+        locale: string;
+        image: string;
+    };
+
+    twitter: {
+        card: string;
+        image: string;
+    };
 }

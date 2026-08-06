@@ -1,76 +1,103 @@
-export const footer = {
-    platform: [
-        {
-            title: "Platform",
-            href: "/platform",
-        },
-        {
-            title: "Features",
-            href: "/features",
-        },
-        {
-            title: "Roadmap",
-            href: "/roadmap",
-        },
-    ],
+import type { FooterSection } from "@/types/footer";
 
-    company: [
-        {
-            title: "About",
-            href: "/company",
-        },
-        {
-            title: "Contact",
-            href: "/contact",
-        },
-        {
-            title: "Careers",
-            href: "/careers",
-        },
-    ],
+export const footer: FooterSection[] = [
+    {
+        title: "Platform",
+        links: [
+            {
+                label: "Platform",
+                href: "/platform",
+            },
+            {
+                label: "Features",
+                href: "/features",
+            },
+            {
+                label: "Roadmap",
+                href: "/roadmap",
+            },
+        ],
+    },
 
-    resources: [
-        {
-            title: "Blog",
-            href: "/blog",
-        },
-        {
-            title: "FAQ",
-            href: "/faq",
-        },
-        {
-            title: "Status",
-            href: "/status",
-        },
-    ],
+    {
+        title: "Company",
+        links: [
+            {
+                label: "About",
+                href: "/company",
+            },
+            {
+                label: "Contact",
+                href: "/contact",
+            },
+            {
+                label: "Careers",
+                href: "/careers",
+            },
+            {
+                label: "Press",
+                href: "/press",
+            },
+        ],
+    },
 
-    security: [
-        {
-            title: "Security",
-            href: "/security",
-        },
-        {
-            title: "Responsible Disclosure",
-            href: "/legal/responsible-disclosure",
-        },
-        {
-            title: "Security Policy",
-            href: "/legal/security-policy",
-        },
-    ],
+    {
+        title: "Resources",
+        links: [
+            {
+                label: "Blog",
+                href: "/blog",
+            },
+            {
+                label: "FAQ",
+                href: "/faq",
+            },
+            {
+                label: "Status",
+                href: "/status",
+            },
+        ],
+    },
 
-    legal: [
-        {
-            title: "Privacy",
-            href: "/legal/privacy-policy",
-        },
-        {
-            title: "Terms",
-            href: "/legal/terms-of-service",
-        },
-        {
-            title: "Trademark",
-            href: "/legal/trademark",
-        },
-    ],
-}
+    {
+        title: "Security",
+        links: [
+            {
+                label: "Security",
+                href: "/security",
+            },
+            {
+                label: "Responsible Disclosure",
+                href: "/legal/responsible-disclosure",
+            },
+            {
+                label: "Security Policy",
+                href: "/legal/security-policy",
+            },
+        ],
+    },
+
+    {
+        title: "Legal",
+        links: [
+            {
+                label: "Privacy Policy",
+                href: "/legal/privacy-policy",
+            },
+            {
+                label: "Terms of Service",
+                href: "/legal/terms-of-service",
+            },
+            {
+                label: "Cookie Policy",
+                href: "/legal/cookie-policy",
+            },
+            {
+                label: "Trademark",
+                href: "/legal/trademark",
+            },
+        ],
+    },
+];
+
+export default footer;

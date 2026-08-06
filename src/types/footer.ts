@@ -1,11 +1,10 @@
-export interface FooterItem {
-    title: string
-
-    href: string
+export interface FooterLink {
+    label: string;
+    href: string;
+    external?: boolean;
 }
 
 export interface FooterSection {
-    title: string
-
-    items: FooterItem[]
+    title: string;
+    links: FooterLink[];
 }

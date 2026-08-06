@@ -1,19 +1,25 @@
-export interface ThemeFonts {
-    heading: string
-
-    body: string
-
-    mono: string
-}
-
 export interface ThemeConfig {
-    radius: string
+    defaultTheme: "dark" | "light";
 
-    defaultTheme: "light" | "dark"
+    radius: string;
 
-    accent: string
+    primary: string;
 
-    animation: boolean
+    secondary: string;
 
-    fonts: ThemeFonts
+    accent: string;
+
+    destructive: string;
+
+    success: string;
+
+    warning: string;
+
+    background: string;
+
+    foreground: string;
+
+    muted: string;
+
+    border: string;
 }

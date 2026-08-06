@@ -1,9 +1,9 @@
 export interface NavigationItem {
-    title: string
+    label: string;
 
-    href: string
+    href: string;
 
-    external?: boolean
+    external?: boolean;
 
-    disabled?: boolean
-}   
+    disabled?: boolean;
+}

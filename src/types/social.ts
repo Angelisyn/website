@@ -1,15 +1,15 @@
-export interface SocialLinks {
-    github: string
+export interface Social {
+    github: string;
 
-    linkedin: string
+    linkedin: string;
 
-    x: string
+    x: string;
 
-    youtube: string
+    discord: string;
 
-    discord: string
+    youtube: string;
 
-    instagram: string
+    instagram: string;
 
-    email: string
+    email: string;
 }

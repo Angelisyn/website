@@ -1,45 +1,67 @@
 export interface Company {
-    name: string
-    shortName: string
-    legalName: string
+    /* -------------------------------------------------------------------------- */
+    /* Company                                                                     */
+    /* -------------------------------------------------------------------------- */
 
-    tagline: string
+    name: string;
 
-    description: string
+    shortName: string;
 
-    mission: string
+    legalName: string;
 
-    vision: string
+    founded: number;
 
-    founded: number
+    version: string;
 
-    version: string
+    stage: string;
 
-    status: string
+    /* -------------------------------------------------------------------------- */
+    /* Branding                                                                    */
+    /* -------------------------------------------------------------------------- */
 
-    url: string
+    tagline: string;
 
-    appUrl: string
+    description: string;
 
-    docsUrl: string
+    mission: string;
 
-    statusUrl: string
+    vision: string;
 
-    githubUrl: string
+    /* -------------------------------------------------------------------------- */
+    /* URLs                                                                        */
+    /* -------------------------------------------------------------------------- */
 
-    email: string
+    url: string;
 
-    supportEmail: string
+    appUrl: string;
 
-    securityEmail: string
+    docsUrl: string;
 
-    pressEmail: string
+    statusUrl: string;
 
-    legalEmail: string
+    githubUrl: string;
 
-    copyright: string
+    /* -------------------------------------------------------------------------- */
+    /* Contact                                                                     */
+    /* -------------------------------------------------------------------------- */
 
-    location: string
+    email: string;
 
-    timezone: string
+    supportEmail: string;
+
+    securityEmail: string;
+
+    legalEmail: string;
+
+    pressEmail: string;
+
+    /* -------------------------------------------------------------------------- */
+    /* Other                                                                       */
+    /* -------------------------------------------------------------------------- */
+
+    location: string;
+
+    timezone: string;
+
+    copyright: string;
 }

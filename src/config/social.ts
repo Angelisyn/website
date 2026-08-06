@@ -5,13 +5,13 @@ export const social = {
 
     x: "",
 
-    youtube: "",
-
     discord: "",
+
+    youtube: "",
 
     instagram: "",
 
     email: "contact@angelisyn.com",
-} as const
+} as const;
 
-export type Social = typeof social
+export default social;

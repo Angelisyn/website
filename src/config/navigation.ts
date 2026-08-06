@@ -1,7 +1,5 @@
-export interface NavigationItem {
-    title: string
-    href: string
-}
+import type { NavigationItem } from "@/types"
+
 
 export const navigation: NavigationItem[] = [
     {

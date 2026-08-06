@@ -5,6 +5,7 @@
  * This file is the single source of truth for all
  * company information used throughout the website.
  */
+import type { Company } from "@/types"
 
 export const company = {
     // Basic Information
